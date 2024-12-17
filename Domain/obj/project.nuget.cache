@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vNowPahc+Hk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RomanL\\RiderProjects\\4lab\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RomanL\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

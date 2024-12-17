@@ -1,0 +1,36 @@
+﻿services:
+  director:
+    image: director
+    build:
+      context: .
+      dockerfile: HrDirector/Dockerfile
+    ports:
+      - "8081:5001"
+  manager:
+    image: manager
+    build:
+      context: .
+      dockerfile: HrManager/Dockerfile
+    ports:
+      - "8082:8080"
+  teamlead1:
+    image: developer
+    build:
+      context: .
+      dockerfile: Developer/Dockerfile
+      args:
+        - job=teamlead
+        - id=1
+  junior1:
+    image: developer
+    build:
+      context: .
+      dockerfile: Developer/Dockerfile
+      args:
+        - job=junior
+        - id=1
+  developer:
+    image: developer
+    build:
+      context: .
+      dockerfile: Developer/Dockerfile
